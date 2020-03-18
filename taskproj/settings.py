@@ -119,3 +119,20 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# celery
+
+CELERY_BROKER_URL = 'redis://h:p3e53229c7389f47ab9832889e8b60d7f55cae8a9fff8a3d8e3c011a905aab122@ec2-3-248-124-238.eu-west-1.compute.amazonaws.com:15629'
+
+CELERY_ACCEPT_CONTENT = ['json']
+
+CELERY_TASK_SERIALIZER = 'json'
+
+# emaol
+
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'brainacad180320202@gmail.com'
+EMAIL_HOST_PASSWORD = '18032020'
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
